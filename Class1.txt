@@ -1,0 +1,75 @@
+﻿//   For count logic code
+public int GetCertificationCount()
+{
+    return driver.FindElements(totalRows).Count;
+}
+     
+//  For newer version of webdriver   
+    use following screenshot code
+
+    using OpenQA.Selenium;
+    using System;
+    using System.IO;
+
+public static class ScreenshotHelper
+{
+    public static string CaptureScreenshot(IWebDriver driver, string screenshotName = "Screenshot")
+    {
+        // Create a folder for screenshots if it doesn't exist
+        string screenshotsDir = Path.Combine(Directory.GetCurrentDirectory(), "Screenshots");
+        if (!Directory.Exists(screenshotsDir))
+        {
+            Directory.CreateDirectory(screenshotsDir);
+        }
+
+        // Create a unique filename with timestamp
+        string fileName = $"{screenshotName}_{DateTime.Now:yyyyMMdd_HHmmss}.png";
+        string filePath = Path.Combine(screenshotsDir, fileName);
+
+        // Take screenshot and save
+        Screenshot screenshot = ((ITakesScreenshot)driver).GetScreenshot();
+        screenshot.SaveAsFile(filePath, ScreenshotImageFormat.Png);            
+        or you can wirte to qulaify enum as below
+        screenshot.SaveAsFile(filePath, OpenQA.Selenium.ScreenshotImageFormat.Png);  // in older version only this line is changed
+                                                                                     // we write only 1 parameter
+                                                                                     //  screenshot.SaveAsFile(filePath);
+        
+
+        return filePath;
+    }
+}
+
+
+///////   How to apply logic for test cases with and without Extent report
+         withou exten report
+         certPage.InputCertifications(data);
+         var lastCertificate = certPage.GetLastCertificate(data.Certificate, data.From, data.Year);
+         Assert.That(lastCertificate == data.Certificate, $"Expected last certificate to be '{data.Certificate}', but was '{lastCertificate}'");
+
+
+         With Extent Report
+         certPage.InputCertifications(data);
+        var lastCertificate = certPage.GetLastCertificate(data.Certificate, data.From, data.Year);
+
+if (lastCertificate == data.Certificate)
+{
+    ExtentReportManager.test.Pass($"Certification '{data.Certificate}' added successfully.");
+}
+else
+{
+    ExtentReportManager.test.Fail($"Certification '{data.Certificate}' not found. Last certificate is '{lastCertificate}'.");
+}
+
+////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////
+//////////////
+ /*  // Loop through skill rows, click delete for each
+              while (true)
+              {
+                  var deleteIconList3 = driver.FindElements(deleteIcons);
+                  if (deleteIconList3.Count == 0)
+                      break;
+                  deleteIconList3[0].Click();
+                  Thread.Sleep(1000);
+
+              }*/
