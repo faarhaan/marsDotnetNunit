@@ -1,0 +1,77 @@
+[
+  {
+    "OriginalUniversity": "Gordon",
+    "University": "MonashUni",
+    "Country": "Australia",
+    "Title": "B.Sc",
+    "Degree": "Science",
+    "GraduationYear": "2010"
+  },
+  {
+    "OriginalUniversity": "Uni-of-Germany",
+    "University": "GermanUni",
+    "Country": "Germany",
+    "Title": "M.Tech",
+    "Degree": "Computer Sc",
+    "GraduationYear": "2013"
+  },
+
+  {
+    "OriginalUniversity": "Quaid-i-Azam",
+    "University": "AllamaIqbal",
+    "Country": "Pakistan",
+    "Title": "B.A",
+    "Degree": "Computer Sc",
+    "GraduationYear": "2007"
+  },
+
+  {
+    "OriginalUniversity": "GordonCollege",
+    "University": "ExcelCollege",
+    "Country": "Pakistan",
+    "Title": "B.A",
+    "Degree": "Computer Sc",
+    "GraduationYear": "2003"
+  },
+  {
+    "OriginalUniversity": "Go@*%&$College",
+    "University": "Excel@*%",
+    "Country": "Pakistan",
+    "Title": "B.A",
+    "Degree": "Computer Sc",
+    "GraduationYear": "2003"
+  },
+  {
+    "OriginalUniversity": "1234",
+    "University": "5897",
+    "Country": "Pakistan",
+    "Title": "B.A",
+    "Degree": "Computer Sc",
+    "GraduationYear": "2003"
+  },
+  {
+    "OriginalUniversity": "Gordonlllllllllllllllllllllllllljigiusgaiugduiagduiahudhusahudga",
+    "University": "Gordonlllllllllllllllllllllllllljigiusgaiugd",
+    "Country": "Pakistan",
+    "Title": "B.A",
+    "Degree": "Computer Sc",
+    "GraduationYear": "2003"
+  },
+  {
+    "OriginalUniversity": "@#$SFSF#$@%#@@(&%(@&(%#)@)%#&@)&#%)&@&%)@#%&)@&%)@&%)@&#%)@&%&)@&%)@%",
+    "University": "@#$SFSF#$@%#@@(&%(@&(%#)@)%#&@)&#%)&",
+    "Country": "Pakistan",
+    "Title": "B.A",
+    "Degree": "Computer Sc",
+    "GraduationYear": "2010"
+  },
+  {
+    "OriginalUniversity": "Uni of Melbourne",
+    "University": "Uni of Sydney",
+    "Country": "Australia",
+    "Title": "B.A",
+    "Degree": "Computer Sc",
+    "GraduationYear": "2003"
+  }
+
+]

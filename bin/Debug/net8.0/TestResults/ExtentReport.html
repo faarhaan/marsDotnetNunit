@@ -1,0 +1,740 @@
+
+
+<!DOCTYPE html>
+<html>
+
+<head>
+ <meta charset="utf-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+ <title></title>
+ <link rel="apple-touch-icon" href="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@c439bdbc7bade3d85af3b90e9e69c30ebc87445f/commons/img/logo.png">
+ <link rel="shortcut icon" href="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@c439bdbc7bade3d85af3b90e9e69c30ebc87445f/commons/img/logo.png">
+ <link href="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@78fa5a2421587b8228150e93142e5ba97178e85b/spark/css/spark-style.css" rel="stylesheet" />
+ <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+ <script src="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@78fa5a2421587b8228150e93142e5ba97178e85b/spark/js/jsontree.js"></script>
+ <style></style>
+</head>
+<body class="spa  standard">
+ <div class="app">
+  <div class="layout">
+   <div class="header navbar">
+ <div class="vheader">
+  <div class="nav-logo">
+   <a href="#">
+	 <div class="logo" style="background-image: url('https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@c43b89d03a7c43dae8bb8f0f078bad1997af6b3b/commons/img/logo.png')"></div>
+   </a>
+  </div>
+  <ul class="nav-left">
+   <li class="search-box">
+	<a class="search-toggle" href="#"><i class="search-icon fa fa-search"></i><i class="search-icon-close fa fa-close"></i></a>
+   </li>
+   <li class="search-input">
+    <input id="search-tests" class="form-control" type="text" placeholder="Search...">
+   </li>
+  </ul>
+  <ul class="nav-right">
+   <li class="m-r-10"><a href="#"><span class="badge badge-primary"></span></a></li>
+   <li class="m-r-10">
+    <a href="#"><span class="badge badge-primary">11/15/2025 12:04:54 PM</span></a>
+   </li>
+  </ul>
+ </div>
+</div>
+   <div class="side-nav">
+ <div class="side-nav-inner">
+  <ul class="side-nav-menu">
+   <li class="nav-item dropdown" onclick="toggleView('test-view')">
+    <a id="nav-test" class="dropdown-toggle" href="#">
+     <span class="ico"><i class="fa fa-list"></i></span>
+    </a>
+   </li>
+   <li class="nav-item dropdown" onclick="toggleView('dashboard-view')">
+    <a id="nav-dashboard" class="dropdown-toggle" href="#">
+     <span class="ico"><i class="fa fa-bar-chart"></i></span>
+    </a>
+   </li>
+  </ul>
+ </div>
+</div>
+
+   <div class="vcontainer">
+    <div class="main-content">
+     
+
+<div class="test-wrapper row view test-view">
+  <div class="test-list">
+    <div class="test-list-tools">
+      <ul class="tools pull-left">
+        <li><a href="#"><span class="font-size-14">Tests</span></a></li>
+      </ul>
+      <ul class="tools text-right">
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-exclamation-circle"></i></a>
+          <ul id="status-toggle" class="dropdown-menu dropdown-md p-v-0">
+ <a class="dropdown-item" status="pass" href="#"><span>Pass</span><span class="status success"></span></a>             <div class="dropdown-divider"></div>
+            <a status="clear" class="dropdown-item" href="#"><span>Clear</span><span class="pull-right"><i class="fa fa-close"></i></span></a>
+          </ul>
+        </li>
+      </ul>
+    </div>
+    <div class="test-list-wrapper scrollable">
+      <ul class="test-list-item">
+        <li class="test-item" status="pass" test-id="1"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">Add Certification Test</p>
+            <p class="text-sm">
+              <span>12:05:14 PM</span> / <span>34115.84 ms</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+            <div class="detail-head">
+              <div class="p-v-10">
+                <div class="info">
+                  <h5 class="test-status text-pass">Add Certification Test</h5>
+                  <span class='badge badge-success'>11/15/2025 12:05:14 PM</span>
+                  <span class='badge badge-danger'>11/15/2025 12:05:48 PM</span>
+                  <span class='badge badge-default'>34115.84 ms</span>
+                  &middot; <span class='uri-anchor badge badge-default'>#test-id=1</span>
+                  <span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
+                  <span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
+                  <span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
+                </div>
+              </div>
+            </div>
+
+
+<div class="detail-body mt-4">
+
+
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>Nov 15, 2025 12:05:20</td>
+        <td>
+Certification 'ISTQB' added successfully.        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>Nov 15, 2025 12:05:24</td>
+        <td>
+Certification 'SQL' added successfully.        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>Nov 15, 2025 12:05:27</td>
+        <td>
+Certification 'Python' added successfully.        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>Nov 15, 2025 12:05:30</td>
+        <td>
+Certification 'Sq%*^&LLLLLL' added successfully.        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>Nov 15, 2025 12:05:33</td>
+        <td>
+Certification '12345' added successfully.        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>Nov 15, 2025 12:05:36</td>
+        <td>
+Certification 'Docker' added successfully.        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>Nov 15, 2025 12:05:41</td>
+        <td>
+Certification 'ISTQB *****#$&#$@#@#%$#^$^%^%$%^$^$%&%^*&*^&*^&*^&*^&*&^*^(&)#%)#$*%$@)*%)@*%)@*)%*%)@$%&)T)$$&)$#)@&%)@&%)@%&@%&)@&%)#$@&%$)@%)$^&)^*)%$)^*)$)^*$)^^(&)#%)#$*%$@)*%)@*%)@*)%*%)@$%&)T)$$&)$#)@&%)@&%)@%&@%&)@&%)#$@&%$)@%)$^&)^*)%$)^*)$)^*$)^^istqbb' added successfully.        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>Nov 15, 2025 12:05:45</td>
+        <td>
+Certification 'SQ)()()())))))(((((((((((((((((((((((((((((((((()))))))))#^#*$)#^*)#*)^$*)^*#$)^*#)^*#)$^*%)&^)#$*%$)#*$^)#*$#*)$%*#)%%$#)))))))))#^#*$)#^*)#*)^$*)^*#$)^*#)^*#)$^*%)&^)#$*%$)#*$^)#*$#*)$%*#)%%$#)%#$)%' added successfully.        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>Nov 15, 2025 12:05:48</td>
+        <td>
+Certification 'IST QB' added successfully.        </td>
+      </tr>
+  </tbody>
+</table></div>
+          </div>
+        </li>
+        <li class="test-item" status="pass" test-id="2"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">Update Certification Test</p>
+            <p class="text-sm">
+              <span>12:06:08 PM</span> / <span>54217.23 ms</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+            <div class="detail-head">
+              <div class="p-v-10">
+                <div class="info">
+                  <h5 class="test-status text-pass">Update Certification Test</h5>
+                  <span class='badge badge-success'>11/15/2025 12:06:08 PM</span>
+                  <span class='badge badge-danger'>11/15/2025 12:07:02 PM</span>
+                  <span class='badge badge-default'>54217.23 ms</span>
+                  &middot; <span class='uri-anchor badge badge-default'>#test-id=2</span>
+                  <span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
+                  <span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
+                  <span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
+                </div>
+              </div>
+            </div>
+
+
+<div class="detail-body mt-4">
+
+
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>Nov 15, 2025 12:06:15</td>
+        <td>
+Certificate 'ISTQB' updated to 'ISTQB Advanced' successfully.        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>Nov 15, 2025 12:06:21</td>
+        <td>
+Certificate 'SQL' updated to 'Advance-SQL' successfully.        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>Nov 15, 2025 12:06:27</td>
+        <td>
+Certificate 'Python' updated to 'Advance-Python' successfully.        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>Nov 15, 2025 12:06:34</td>
+        <td>
+Certificate 'Sq%*^&LLLLLL' updated to 'AdvanceSq%*^&LLLLLL' successfully.        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>Nov 15, 2025 12:06:41</td>
+        <td>
+Certificate '12345' updated to '123456' successfully.        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>Nov 15, 2025 12:06:47</td>
+        <td>
+Certificate 'Docker' updated to 'Advance-Docker' successfully.        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>Nov 15, 2025 12:06:55</td>
+        <td>
+Certificate 'SQ)()()())))))(((((((((((((((((((((((((((((((((()))))))))#^#*$)#^*)#*)^$*)^*#$)^*#)^*#)$^*%)&^)#$*%$)#*$^)#*$#*)$%*#)%%$#)))))))))#^#*$)#^*)#*)^$*)^*#$)^*#)^*#)$^*%)&^)#$*%$)#*$^)#*$#*)$%*#)%%$#)%#$)%' updated to 'EncodededText SQ)()()())))))(((((((((((((((((((((((((((((((((()))))))))#^#*$)#^*)#*)^$*)^*#$)^*#)^*#)$^*%)&^)#$*%$)#*$^)#*$#*)$%*#)%%$#)))))))))#^#*$)#^*)#*)^$*)^*#$)^*#)^*#)$^*%)&^)#$*%$)#*$^)#*$#*)$%*#)%%$#)%#$)%' successfully.        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>Nov 15, 2025 12:07:02</td>
+        <td>
+Certificate 'IST QB' updated to 'testitwithemptySpacesIST QB' successfully.        </td>
+      </tr>
+  </tbody>
+</table></div>
+          </div>
+        </li>
+        <li class="test-item" status="pass" test-id="3"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">Delete Certification Test</p>
+            <p class="text-sm">
+              <span>12:07:21 PM</span> / <span>28675.8 ms</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+            <div class="detail-head">
+              <div class="p-v-10">
+                <div class="info">
+                  <h5 class="test-status text-pass">Delete Certification Test</h5>
+                  <span class='badge badge-success'>11/15/2025 12:07:21 PM</span>
+                  <span class='badge badge-danger'>11/15/2025 12:07:50 PM</span>
+                  <span class='badge badge-default'>28675.8 ms</span>
+                  &middot; <span class='uri-anchor badge badge-default'>#test-id=3</span>
+                  <span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
+                  <span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
+                  <span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
+                </div>
+              </div>
+            </div>
+
+
+<div class="detail-body mt-4">
+
+
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>Nov 15, 2025 12:07:25</td>
+        <td>
+Certification 'ISTQB Advanced' deleted successfully.        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>Nov 15, 2025 12:07:29</td>
+        <td>
+Certification 'Advance-SQL' deleted successfully.        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>Nov 15, 2025 12:07:32</td>
+        <td>
+Certification 'Advance-Python' deleted successfully.        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>Nov 15, 2025 12:07:36</td>
+        <td>
+Certification 'AdvanceSq%*^&LLLLLL' deleted successfully.        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>Nov 15, 2025 12:07:40</td>
+        <td>
+Certification '123456' deleted successfully.        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>Nov 15, 2025 12:07:43</td>
+        <td>
+Certification 'Advance-Docker' deleted successfully.        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>Nov 15, 2025 12:07:46</td>
+        <td>
+Certification 'EncodededText SQ)()()())))))(((((((((((((((((((((((((((((((((()))))))))#^#*$)#^*)#*)^$*)^*#$)^*#)^*#)$^*%)&^)#$*%$)#*$^)#*$#*)$%*#)%%$#)))))))))#^#*$)#^*)#*)^$*)^*#$)^*#)^*#)$^*%)&^)#$*%$)#*$^)#*$#*)$%*#)%%$#)%#$)%' deleted successfully.        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>Nov 15, 2025 12:07:50</td>
+        <td>
+Certification 'testitwithemptySpacesIST QB' deleted successfully.        </td>
+      </tr>
+  </tbody>
+</table></div>
+          </div>
+        </li>
+        <li class="test-item" status="pass" test-id="4"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">Add Education Test</p>
+            <p class="text-sm">
+              <span>12:08:14 PM</span> / <span>133090.61 ms</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+            <div class="detail-head">
+              <div class="p-v-10">
+                <div class="info">
+                  <h5 class="test-status text-pass">Add Education Test</h5>
+                  <span class='badge badge-success'>11/15/2025 12:08:14 PM</span>
+                  <span class='badge badge-danger'>11/15/2025 12:10:27 PM</span>
+                  <span class='badge badge-default'>133090.61 ms</span>
+                  &middot; <span class='uri-anchor badge badge-default'>#test-id=4</span>
+                  <span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
+                  <span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
+                  <span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
+                </div>
+              </div>
+            </div>
+
+
+<div class="detail-body mt-4">
+
+
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>Nov 15, 2025 12:08:30</td>
+        <td>
+Education 'Gordon' was added successfully.        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>Nov 15, 2025 12:08:49</td>
+        <td>
+Education 'Uni-of-Germany' was added successfully.        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>Nov 15, 2025 12:08:57</td>
+        <td>
+Education 'Quaid-i-Azam' was added successfully.        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>Nov 15, 2025 12:09:04</td>
+        <td>
+Education 'GordonCollege' was added successfully.        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>Nov 15, 2025 12:09:28</td>
+        <td>
+Education 'Go@*%&$College' was added successfully.        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>Nov 15, 2025 12:09:47</td>
+        <td>
+Education '1234' was added successfully.        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>Nov 15, 2025 12:10:02</td>
+        <td>
+Education 'Uni of Melbourne ' was added successfully.        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>Nov 15, 2025 12:10:09</td>
+        <td>
+Education 'Gordonlllllllllllllllllllllllllljigiusgaiugduiagduiahudhusahudga' was added successfully.        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>Nov 15, 2025 12:10:27</td>
+        <td>
+Education '@#$SFSF#$@%#@@(&%(@&(%#)@)%#&@)&#%)&@&%)@#%&)@&%)@&%)@&#%)@&%&)@&%)@%' was added successfully.        </td>
+      </tr>
+  </tbody>
+</table></div>
+          </div>
+        </li>
+        <li class="test-item" status="pass" test-id="5"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">Update Education Test</p>
+            <p class="text-sm">
+              <span>12:11:03 PM</span> / <span>112446.45 ms</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+            <div class="detail-head">
+              <div class="p-v-10">
+                <div class="info">
+                  <h5 class="test-status text-pass">Update Education Test</h5>
+                  <span class='badge badge-success'>11/15/2025 12:11:03 PM</span>
+                  <span class='badge badge-danger'>11/15/2025 12:12:56 PM</span>
+                  <span class='badge badge-default'>112446.45 ms</span>
+                  &middot; <span class='uri-anchor badge badge-default'>#test-id=5</span>
+                  <span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
+                  <span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
+                  <span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
+                </div>
+              </div>
+            </div>
+
+
+<div class="detail-body mt-4">
+
+
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>Nov 15, 2025 12:11:34</td>
+        <td>
+Education 'Gordon' updated to 'MonashUni' successfully.        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>Nov 15, 2025 12:12:03</td>
+        <td>
+Education 'Uni-of-Germany' updated to 'GermanUni' successfully.        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>Nov 15, 2025 12:12:13</td>
+        <td>
+Education 'Quaid-i-Azam' updated to 'AllamaIqbal' successfully.        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>Nov 15, 2025 12:12:20</td>
+        <td>
+Education 'GordonCollege' updated to 'ExcelCollege' successfully.        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>Nov 15, 2025 12:12:27</td>
+        <td>
+Education 'Go@*%&$College' updated to 'Excel@*%' successfully.        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>Nov 15, 2025 12:12:33</td>
+        <td>
+Education '1234' updated to '5897' successfully.        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>Nov 15, 2025 12:12:42</td>
+        <td>
+Education 'Gordonlllllllllllllllllllllllllljigiusgaiugduiagduiahudhusahudga' updated to 'Gordonlllllllllllllllllllllllllljigiusgaiugd' successfully.        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>Nov 15, 2025 12:12:49</td>
+        <td>
+Education '@#$SFSF#$@%#@@(&%(@&(%#)@)%#&@)&#%)&@&%)@#%&)@&%)@&%)@&#%)@&%&)@&%)@%' updated to '@#$SFSF#$@%#@@(&%(@&(%#)@)%#&@)&#%)&' successfully.        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>Nov 15, 2025 12:12:56</td>
+        <td>
+Education 'Uni of Melbourne' updated to 'Uni of Sydney' successfully.        </td>
+      </tr>
+  </tbody>
+</table></div>
+          </div>
+        </li>
+        <li class="test-item" status="pass" test-id="6"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">Delete Education Test</p>
+            <p class="text-sm">
+              <span>12:13:15 PM</span> / <span>56926.17 ms</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+            <div class="detail-head">
+              <div class="p-v-10">
+                <div class="info">
+                  <h5 class="test-status text-pass">Delete Education Test</h5>
+                  <span class='badge badge-success'>11/15/2025 12:13:15 PM</span>
+                  <span class='badge badge-danger'>11/15/2025 12:14:12 PM</span>
+                  <span class='badge badge-default'>56926.17 ms</span>
+                  &middot; <span class='uri-anchor badge badge-default'>#test-id=6</span>
+                  <span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
+                  <span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
+                  <span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
+                </div>
+              </div>
+            </div>
+
+
+<div class="detail-body mt-4">
+
+
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>Nov 15, 2025 12:13:20</td>
+        <td>
+Education 'MonashUni' deleted successfully.        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>Nov 15, 2025 12:13:24</td>
+        <td>
+Education 'GermanUni' deleted successfully.        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>Nov 15, 2025 12:13:27</td>
+        <td>
+Education 'AllamaIqbal' deleted successfully.        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>Nov 15, 2025 12:13:31</td>
+        <td>
+Education 'ExcelCollege' deleted successfully.        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>Nov 15, 2025 12:13:38</td>
+        <td>
+Education 'Excel@*%' deleted successfully.        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>Nov 15, 2025 12:13:47</td>
+        <td>
+Education '5897' deleted successfully.        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>Nov 15, 2025 12:13:58</td>
+        <td>
+Education 'Gordonlllllllllllllllllllllllllljigiusgaiugd' deleted successfully.        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>Nov 15, 2025 12:14:06</td>
+        <td>
+Education '@#$SFSF#$@%#@@(&%(@&(%#)@)%#&@)&#%)&' deleted successfully.        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>Nov 15, 2025 12:14:12</td>
+        <td>
+Education 'Uni of Sydney' deleted successfully.        </td>
+      </tr>
+  </tbody>
+</table></div>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </div>
+  <div class="test-content scrollable">
+    <div class="test-content-tools">
+      <ul><li><a class="back-to-test" href="#"><i class="fa fa-arrow-left"></i></a></li></ul>
+    </div>
+    <div class="test-content-detail"><div class="detail-body"></div></div>
+  </div>
+</div>
+
+     
+
+<div class="container-fluid p-4 view dashboard-view">
+  <div class="row">
+    <div class="col-md-3">
+      <div class="card"><div class="card-body">
+          <p class="m-b-0">Started</p>
+          <h3>11/15/2025 12:04:54 PM</h3>
+      </div></div>
+    </div>
+    <div class="col-md-3">
+      <div class="card"><div class="card-body">
+          <p class="m-b-0">Ended</p>
+          <h3>11/15/2025 12:14:13 PM</h3>
+      </div></div>
+    </div>
+    <div class="col-md-3">
+      <div class="card"><div class="card-body">
+          <p class="m-b-0 text-pass">Tests Passed</p>
+          <h3>6</h3>
+      </div></div>
+    </div>
+    <div class="col-md-3">
+      <div class="card"><div class="card-body">
+          <p class="m-b-0 text-fail">Tests Failed</p>
+          <h3>0</h3>
+      </div></div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-md-6">
+      <div class="card">
+        <div class="card-header">
+          <h6 class="card-title">Tests</h6>
+        </div>
+        <div class="card-body">
+          <div class="">
+            <canvas id='parent-analysis' width='115' height='90'></canvas>
+          </div>
+        </div>
+        <div class="card-footer">
+          <div><small data-tooltip='1%'>
+            <b>6</b> tests passed
+            </small>
+          </div>
+          <div>
+            <small data-tooltip='0%'><b>0</b> tests failed, 
+            <b>0</b> skipped, <b data-tooltip='0%'>0</b> others
+            </small>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-6">
+      <div class="card">
+        <div class="card-header">
+          <h6 class="card-title">Log events</h6>
+        </div>
+        <div class="card-body">
+          <div class="">
+            <canvas id='events-analysis' width='115' height='90'></canvas>
+          </div>
+        </div>
+        <div class="card-footer">
+          <div><small data-tooltip='1%'><b>52</b> events passed</small></div>
+          <div>
+            <small data-tooltip='0%'><b>0</b> events failed, 
+            <b data-tooltip='%'>0</b> others
+            </small>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="row"><div class="col-md-12">
+    <div class="card"><div class="card-header"><p>Timeline</p></div>
+      <div class="card-body pt-0"><div>
+        <canvas id="timeline" height="120"></canvas>
+      </div></div>
+    </div>
+  </div></div>
+  <script>
+	var timeline = { "Add Certification Test":34115.839,"Update Certification Test":54217.2332,"Delete Certification Test":28675.8004,"Add Education Test":133090.6072,"Update Education Test":112446.4512,"Delete Education Test":56926.1742 };
+  </script>
+  <div class="row">
+  </div>
+</div>
+<script>
+  var statusGroup = {
+    parentCount: 6,
+    childCount: 0,
+    grandChildCount: 0,
+    eventsCount: 52,
+
+passParent:6,failParent:0,warningParent:0,skipParent:0,    
+passChild:0,failChild:0,warningChild:0,skipChild:0,infoChild:0,    
+passGrandChild:0,failGrandChild:0,warningGrandChild:0,skipGrandChild:0,infoGrandChild:0,    
+passEvents:52,failEvents:0,warningEvents:0,skipEvents:0,infoEvents:0,  };
+</script>
+
+    </div>
+   </div>
+  </div>
+ </div>
+ <script src="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@c439bdbc7bade3d85af3b90e9e69c30ebc87445f/spark/js/spark-script.js"></script>
+<script type='text/javascript'></script>
+</body>
+</html>
